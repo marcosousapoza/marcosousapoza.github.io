@@ -6,7 +6,7 @@ function sendDataToPi() {
     };
 
     // Fetch request to the Raspberry Pi's Flask server
-    fetch('https://sousa-poza.xyz/test', {  // Replace 'your-public-ip' with your actual public IP address
+    fetch('https://sousa-poza.xyz/test', {  // Connect to backend
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
