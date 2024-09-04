@@ -1,0 +1,41 @@
+/* General Sudoku Board Styles */
+table {
+    margin: 1em auto;
+    border-collapse: collapse;
+    background-color: #f0f0f0; /* Light gray background behind Sudoku */
+}
+td {
+    height: 50px;
+    width: 50px;
+    border: 1px solid #ccc; /* Thin border for regular cells */
+    text-align: center;
+    font-size: 18px;
+}
+td input {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+/* Thicker borders for dividing 3x3 sections */
+td:first-child {
+    border-left: 3px solid #000; /* Thicker left border for the first column */
+}
+td:nth-child(3n) {
+    border-right: 3px solid #000; /* Thicker right border every 3 cells */
+}
+tr:first-child td {
+    border-top: 3px solid #000; /* Thicker top border for the first row */
+}
+tr:nth-child(3n) td {
+    border-bottom: 3px solid #000; /* Thicker bottom border every 3 rows */
+}
+
+/* Style for pre-filled cells (non-editable cells), with a yellow background */
+.prefilled {
+    background-color: #ffeb99; /* Light yellow background for pre-filled numbers */
+}
